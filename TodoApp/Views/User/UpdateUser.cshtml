@@ -1,0 +1,30 @@
+﻿@model User
+
+<h1> Update User</h1>
+
+<form method="post" asp-action="UpdateUser" asp-controller="User">
+    <!-- need of form element in HTML 5-->
+
+    <div>
+        <label asp-for="uId"></label>
+        <input asp-for="uId" readonly />
+    </div>
+    <div>
+        <label asp-for="uName"></label>
+        <input asp-for="uName" />
+    </div>
+    <div>
+        <label asp-for="uEmail"></label>
+        <input asp-for="uEmail" />
+    </div>
+    <div>
+        <label asp-for="uPassword"></label>
+        <input asp-for="uPassword" />
+    </div>
+    <div>
+        <label asp-for="uStatus"></label>
+        <input asp-for="uStatus" />
+    </div>
+
+    <button type="submit">Update</button>
+</form>
