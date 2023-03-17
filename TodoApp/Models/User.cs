@@ -19,6 +19,7 @@ namespace TodoApp.Models
 
         public List<Todo> Todos { get; set; }
 
+        //Constructor
         public User()
         {
 
